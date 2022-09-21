@@ -3,7 +3,7 @@ kind: ApplicationSet
 metadata:
   name: multi-cluster-application-set
   namespace: argocd
-  generators:
+generators:
   - list:
       elements:
         - namespace: prod
