@@ -19,6 +19,7 @@ spec:
         targetRevision: HEAD
         path: ./environment-promotion/envs/{{name}}
       destination:
+        server: 'https://kubernetes.default.svc'
         namespace: '{{name}}'
       # Sync policy
       syncPolicy:
