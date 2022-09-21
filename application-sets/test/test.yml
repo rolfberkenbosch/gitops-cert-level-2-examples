@@ -3,13 +3,12 @@ kind: ApplicationSet
 metadata:
   name: multi-cluster-application-set
   namespace: argocd
-spec:
   generators:
   - list:
-  element:
-  - namespace: prod
-  - namespace: staging
-  - namespace: qa
+      elements:
+        - namespace: prod
+        - namespace: staging
+        - namespace: qa
   template:      
     metadata:
       name: 'demo-{{namespace}}'
