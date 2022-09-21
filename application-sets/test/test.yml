@@ -11,7 +11,7 @@ spec:
       - name: qa
   template:
     metadata:
-      name: 'demo-{{name}}'
+      name: '{{name}}'
     spec:
       project: default
       source:
